@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"JetBrainsMono:size=12","Alexandria:size=12","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
-static const char dmenufont[]       = "JetBrainsMono:size=12";
+static const char *fonts[]          = {"18 Khebrat Musamim:size=13","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
+static const char dmenufont[]       = "18 Khebrat Musamim:size=13";
 static const char col_gray1[]       = "#222222"; /* bar color */
 static const char col_gray2[]       = "#03071e"; /* inactive window border */
 static const char col_gray3[]       = "#ffffff"; /* bar font color */
