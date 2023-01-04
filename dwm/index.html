@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        
+            <title>How to Learn the C++ Programming Language</title>
+        
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+            <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Mono:wght@400;700&display=swap">
+        
+
+        
+        
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.css" />
+<noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.css"></noscript>
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.css" />
+<noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.css"></noscript>
+
+<script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-markup-templating.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-bash.min.js"></script>
+<script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-c.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-clojure.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-cpp.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-csharp.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-css.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-docker.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-elixir.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-erlang.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-git.min.js"></script>
+<script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-go.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-graphql.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-haskell.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-java.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-javascript.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-json.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-jsx.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-julia.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-kotlin.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-lua.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-markup.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-php.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-python.min.js"></script>
+<script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-r.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-ruby.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-rust.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-scala.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-sql.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-swift.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-typescript.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-yaml.min.js"></script>
+<script defer type="text/javascript"
+    src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-dart.min.js"></script>
+
+
+
+        
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/news/assets/css/global-26e2f3cde9.css" />
+        <link rel="stylesheet" type="text/css" href="/news/assets/css/screen-5a4f9d5c91.css" />
+        <link rel="stylesheet" type="text/css" href="/news/assets/css/search-bar-124f5f949c.css" />
+
+        
+        <script defer src="https://cdn.freecodecamp.org/news-assets/algolia/algoliasearch-3-33-0/algoliasearch.min.js"></script>
+        <script defer src="https://cdn.freecodecamp.org/news-assets/algolia/autocomplete-0-36-0/autocomplete.min.js"></script>
+
+        
+        <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs/1.10.4/dayjs.min.js"></script>
+        <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs/1.10.4/localizedFormat.min.js"></script>
+        <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs/1.10.4/relativeTime.min.js"></script>
+
+        
+        
+            <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs/1.10.4/locale/en.min.js"></script>
+        
+
+        
+        <script>let client,index;document.addEventListener("DOMContentLoaded",(()=>{client=algoliasearch("QMJYL5WYTI","89770b24481654192d7a5c402c6ad9a0"),index=client.initIndex("news")})),document.addEventListener("DOMContentLoaded",(()=>{const e=window.screen.width,t=window.screen.height,n=e>=767&&t>=768?8:5,o=document.getElementById("search-form"),s=document.getElementById("search-input"),a=document.getElementById("dropdown-container");let i,d,c;s.addEventListener("input",(e=>{i=e.target.value})),o.addEventListener("submit",(e=>{e.preventDefault(),function(){if(d=document.getElementsByClassName("aa-cursor")[0],d&&i){const e=d.querySelector("a").href;window.location.assign(e)}else!d&&i&&c&&window.location.assign(`https://www.freecodecamp.org/news/search?query=${i}`)}()}));const l=autocomplete("#search-input",{hint:!1,keyboardShortcuts:["s",191],openOnFocus:!0,appendTo:a,debug:!0},[{source:autocomplete.sources.hits(index,{hitsPerPage:n}),debounce:250,templates:{suggestion:e=>(c=!0,`\n            <a href="${e.url}">\n              <div class="algolia-result">\n                <span>${e._highlightResult.title.value}</span>\n              </div>\n            </a>\n          `),empty:()=>(c=!1,'\n            <div class="aa-suggestion footer-suggestion no-hits-footer">\n              <div class="algolia-result">\n                <span>\n                  No tutorials found\n                </span>\n              </div>\n            </div>\n          '),footer:e=>{if(!e.isEmpty)return`\n              <div class="aa-suggestion footer-suggestion">\n                <a id="algolia-footer-selector" href="https://www.freecodecamp.org/news/search?query=${i}">\n                  <div class="algolia-result algolia-footer">\n                    See all results for ${i}\n                  </div>\n                </a>\n              </div>\n            `}}}]).on("autocomplete:selected",((e,t,n,o)=>{d=t?t.url:`https://www.freecodecamp.org/news/search?query=${i}`,"click"!==o.selectionMethod&&"tabKey"!==o.selectionMethod&&c&&window.location.assign(d)}));document.addEventListener("click",(e=>{e.target!==s&&l.autocomplete.close()}))})),document.addEventListener("DOMContentLoaded",(()=>{dayjs.extend(dayjs_plugin_localizedFormat),dayjs.extend(dayjs_plugin_relativeTime),dayjs.locale("en")}));const isAuthenticated=document.cookie.split(";").some((e=>e.trim().startsWith("jwt_access_token="))),isDonor=document.cookie.split(";").some((e=>e.trim().startsWith("isDonor=true")));</script>
+
+        
+        
+    
+        <script
+            data-ad-client="ca-pub-9482786369113753"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            crossorigin="anonymous"
+            async
+        ></script>
+        <script data-test-label="toggle-ad-layout" defer src="/news/assets/js/toggle-ad-layout-099254b065.js"></script>
+    
+
+
+        
+        
+    <script defer src="/news/assets/js/fitvids-5d12072cbf.js"></script>
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelector(".post-full-content");t&&fitVids(t)}));</script>
+
+
+        
+        
+
+        <link rel="icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico" type="image/png">
+        
+        
+            <link rel="canonical" href="https://www.freecodecamp.org/news/how-to-learn-the-c-programming-language/">
+        
+        <meta name="referrer" content="no-referrer-when-downgrade">
+
+        
+
+        
+    <link rel="amphtml" href="https://www.freecodecamp.org/news/how-to-learn-the-c-programming-language/amp/">
+    <meta name="description" content="In the early days of computer programming, programmers had to write individual instructions in the Assembly language one by one.  Later on programming languages like FORTRAN and COBOL were created. The problem with these languages was that they were targeted at a certain group of people – FORTRAN for">
+
+    
+    <meta property="og:site_name" content="freeCodeCamp.org">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Learn the C++ Programming Language">
+    
+        <meta property="og:description" content="In the early days of computer programming, programmers had to write individual instructions in the Assembly language one by one.  Later on programming languages like FORTRAN and COBOL were created. The problem with these languages was that they were targeted at a certain group of people – FORTRAN for">
+    
+    <meta property="og:url" content="https://www.freecodecamp.org/news/how-to-learn-the-c-programming-language/">
+    <meta property="og:image" content="https://www.freecodecamp.org/news/content/images/2022/03/How-to-Learn-the-C---Programming-Language.png">
+    <meta property="article:published_time" content="2022-04-11T17:10:10.000Z">
+    <meta property="article:modified_time" content="2022-04-18T07:00:03.000Z">
+    
+        <meta property="article:tag" content="C++">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp">
+    
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Learn the C++ Programming Language">
+    
+        <meta name="twitter:description" content="In the early days of computer programming, programmers had to write individual instructions in the Assembly language one by one.  Later on programming languages like FORTRAN and COBOL were created. The problem with these languages was that they were targeted at a certain group of people – FORTRAN for">
+    
+    <meta name="twitter:url" content="https://www.freecodecamp.org/news/how-to-learn-the-c-programming-language/">
+    <meta name="twitter:image" content="https://www.freecodecamp.org/news/content/images/2022/03/How-to-Learn-the-C---Programming-Language.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Farhan Hasin Chowdhury">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="C++">
+    <meta name="twitter:site" content="@freecodecamp">
+    
+        <meta name="twitter:creator" content="@frhnhsin">
+    
+
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+
+
+        
+    <script type="application/ld+json">{
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"publisher": {
+		"@type": "Organization",
+		"name": "freeCodeCamp.org",
+		"url": "https://www.freecodecamp.org/news/",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg",
+			"width": 2100,
+			"height": 240
+		}
+	},
+	"image": {
+		"@type": "ImageObject",
+		"url": "https://www.freecodecamp.org/news/content/images/2022/03/How-to-Learn-the-C---Programming-Language.png",
+		"width": 600,
+		"height": 400
+	},
+	"url": "https://www.freecodecamp.org/news/how-to-learn-the-c-programming-language/",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.freecodecamp.org/news/"
+	},
+	"datePublished": "2022-04-11T17:10:10.000Z",
+	"dateModified": "2022-04-18T07:00:03.000Z",
+	"keywords": "C++",
+	"description": "In the early days of computer programming, programmers had to write individual\ninstructions in the Assembly language one by one. \n\nLater on programming languages like FORTRAN and COBOL were created. The problem\nwith these languages was that they were targeted at a certain group of people –\nFORTRAN for engineers and scientists and COBOL for business people.\n\nThen during the 60s a new language called Simula surfaced and introduced the\nconcept of a class, which sort of let anyone make software for ",
+	"headline": "How to Learn the C++ Programming Language",
+	"author": {
+		"@type": "Person",
+		"name": "Farhan Hasin Chowdhury",
+		"url": "https://www.freecodecamp.org/news/author/farhanhasin/",
+		"sameAs": [
+			"https://farhan.dev/",
+			"https://twitter.com/frhnhsin"
+		],
+		"image": {
+			"@type": "ImageObject",
+			"url": "https://www.freecodecamp.org/news/content/images/2022/08/20200204_151201-02.jpeg",
+			"width": 2000,
+			"height": 2000
+		}
+	}
+}</script>
+
+
+        <meta name="generator" content="Eleventy">
+        <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/news/rss/">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+<!-- Web Monetization (https://webmonetization.org/) -->
+<meta name="monetization" content="$ilp.uphold.com/LJmbPn7WD4JB">
+<!-- end Web Monetization -->
+
+<!-- dataLayer setup -->
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+<!-- End dataLayer setup -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5D6RKKP');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta name="google-site-verification" content="b4tITLzEeeZGEpvD4mGNf3khKM4fvqejQaz9SYBQP8E" />
+
+        
+    </head>
+    
+    
+        <body class="home-template">
+    
+        <div class="site-wrapper">
+            <nav class="site-nav nav-padding">
+    <div class="site-nav-left">
+        
+<form id="search-form" data-test-label="search-bar">
+    <div role="search" class="searchbox__wrapper">
+        <label class="fcc_sr_only" for='search-input'>
+            Search
+        </label>
+        <input type="search" placeholder="
+    Search 9,400+ tutorials
+" id="search-input" />
+        <button type="submit" class="ais-SearchBox-submit">
+            <svg class="ais-SearchBox-submitIcon" xmlns="https://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 40 40">
+    <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z" />
+</svg>
+
+            <span class="fcc_sr_only">Submit your search query</span>
+        </button>
+        <div id='dropdown-container'></div>
+    </div>
+</form>
+
+    </div>
+    <div class="site-nav-middle">
+        <a class="site-nav-logo" href="https://www.freecodecamp.org/news" data-test-label="site-nav-logo"><img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp.org" /></a>
+    </div>
+    <div class="site-nav-right">
+        <div class="nav-group">
+            <a
+                class="nav-forum"
+                id="nav-forum"
+                rel="noopener noreferrer"
+                href="https://forum.freecodecamp.org/"
+                target="_blank"
+                data-test-label="forum-button"
+            >Forum</a>
+            <a
+                class="toggle-button-nav"
+                id="nav-donate"
+                rel="noopener noreferrer"
+                href="https://www.freecodecamp.org/donate/"
+                target="_blank"
+                data-test-label="donate-button"
+            >Donate</a>
+        </div>
+    </div>
+</nav>
+
+
+            
+            <a class="banner" id="banner" data-test-label="banner" rel="noopener noreferrer" target="_blank">
+    <p id="banner-text"></p>
+</a>
+
+
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("banner"),t=document.getElementById("banner-text");isAuthenticated?(t.innerHTML="Support our charity and our mission. <span>Donate to freeCodeCamp.org</span>.",e.href="https://www.freecodecamp.org/donate",e.setAttribute("text-variation","authenticated")):isDonor?(t.innerHTML="Thank you for supporting freeCodeCamp through <span>your donations</span>.",e.href="https://www.freecodecamp.org/news/how-to-donate-to-free-code-camp/",e.setAttribute("text-variation","donor")):(t.innerHTML="Learn to code — <span>free 3,000-hour curriculum</span>",e.href="https://www.freecodecamp.org/",e.setAttribute("text-variation","default"))}));</script>
+
+
+            <div id="error-message"></div>
+
+            
+    <main id="site-main" class="post-template site-main outer">
+        <div class="inner ad-layout">
+            <article class="post-full post ">
+                <header class="post-full-header">
+                    <section class="post-full-meta">
+                        <time class="post-full-meta-date" datetime="Mon Apr 11 2022 17:10:10 GMT+0000 (Coordinated Universal Time)">
+                            April 11, 2022
+                        </time>
+                        
+                            <span class="date-divider">/</span>
+                            <a  dir="ltr" href="/news/tag/c-2/">
+                                #C++
+                            </a>
+                        
+                    </section>
+                    <h1 class="post-full-title">How to Learn the C++ Programming Language</h1>
+                </header>
+                <div class="post-full-author-header" data-test-label="author-header-no-bio">
+                    
+                        
+                            
+    
+    
+    
+
+    <section class="author-card" data-test-label="author-card">
+        
+            
+    <img
+      srcset="https://www.freecodecamp.org/news/content/images/size/w60/2022/08/20200204_151201-02.jpeg 60w"
+      sizes="60px"
+      src="https://www.freecodecamp.org/news/content/images/size/w60/2022/08/20200204_151201-02.jpeg"
+      class="author-profile-image"
+      alt="Farhan Hasin Chowdhury"
+      width="2000"
+      height="2000"
+      onerror="this.style.display='none'"
+      
+      data-test-label="profile-image"
+    />
+  
+        
+
+        <section class="author-card-content author-card-content-no-bio">
+            <span class="author-card-name">
+                <a href="/news/author/farhanhasin/" data-test-label="profile-link">
+                    
+                        Farhan Hasin Chowdhury
+                    
+                </a>
+            </span>
+            
+        </section>
+    </section>
+
+                        
+                    
+                </div>
+                
+                    <figure class="post-full-image">
+                        
+    <picture>
+      <source
+        media="(max-width: 700px)"
+        sizes="1px"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+      <source 
+        media="(min-width: 701px)"
+        sizes="(max-width: 800px) 400px, (max-width: 1170px) 700px, 1400px"
+        srcset="https://www.freecodecamp.org/news/content/images/size/w300/2022/03/How-to-Learn-the-C---Programming-Language.png 300w,https://www.freecodecamp.org/news/content/images/size/w600/2022/03/How-to-Learn-the-C---Programming-Language.png 600w,https://www.freecodecamp.org/news/content/images/size/w1000/2022/03/How-to-Learn-the-C---Programming-Language.png 1000w,https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/How-to-Learn-the-C---Programming-Language.png 2000w"
+      />
+      <img
+        onerror="this.style.display='none'"
+        src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/03/How-to-Learn-the-C---Programming-Language.png"
+        alt="How to Learn the C++ Programming Language",
+        width="600"
+        height="400"
+      >
+    </picture>
+  
+                    </figure>
+                
+                <section class="post-full-content">
+                    <div class="post-and-sidebar">
+                        <section class="post-content ">
+                            
+<p>In the early days of computer programming, programmers had to write individual instructions in the Assembly language one by one. </p><p>Later on programming languages like FORTRAN and COBOL were created. The problem with these languages was that they were targeted at a certain group of people – FORTRAN for engineers and scientists and COBOL for business people.</p><p>Then during the 60s a new language called Simula surfaced and introduced the concept of a class, which sort of let anyone make software for their special fields.</p><p>After that, during the 80s, Bjarne Stroustrup came up with the idea of combining the general abstraction of Simula with the low level functionalities of C, which at the time was the best language for the job. </p><p>Thus, "C with Classes" was born which later became known as the C++ programming language.</p><p>The C++ programming language is a statically typed, compiled, multi-paradigm, general purpose programming language notorious for it's steep learning curve. It has wide spread use in video game, desktop software, and embedded system development. </p><p>C++ is somewhat complex and extremely powerful – and to be honest, if you plan your learning roadmap properly, C++ is not as bad as many people may want you to believe.</p><p>In this article, I'll start by showing you the very basics of the C++ programming language. </p><p>If you've programmed before, this introduction should be pretty straightforward for you. But if you're learning C++ as your first programming language, you may find it quite challenging because of the sheer amount of concepts you'll have to understand.</p><p>Once I've finished with the introduction, I'll give you a list of high quality learning resources as well as recommendations on how to make the most out of them.</p><p>So without further ado, let's jump in.</p><h2 id="table-of-contents">Table of Contents</h2><!--kg-card-begin: markdown--><ul>
+<li><a href="#high-level-overview-of-c-">High Level Overview of C++</a>
+<ul>
+<li><a href="#hello-world">Hello World</a></li>
+<li><a href="#understanding-a-c-program">Understanding a C++ Program</a></li>
+<li><a href="#common-data-types-and-arrays">Common Data Types and Arrays</a></li>
+<li><a href="#flow-control">Flow Control</a></li>
+<li><a href="#functions">Functions</a></li>
+</ul>
+</li>
+<li><a href="#c-learning-resources">C++ Learning Resources</a>
+<ul>
+<li><a href="#learn-c-in-31-hours">Learn C++ in 31 Hours</a></li>
+<li><a href="#learn-c-in-4-hours">Learn C++ in 4 Hours</a></li>
+<li><a href="#object-oriented-programming-oop-in-c-">Object Oriented Programming (OOP) in C++</a></li>
+<li><a href="#opengl-crash-course">OpenGL Crash Course</a></li>
+<li><a href="#unreal-engine-in-5-hours">Unreal Engine in 5 Hours</a></li>
+</ul>
+</li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+<!--kg-card-end: markdown--><h2 id="high-level-overview-of-c-">High Level Overview of C++</h2><p>Before I jump into the learning roadmap and resources section, I would like to introduce you to the C++ programming language itself. This way, you won't feel overwhelmed once you start diving into the below mentioned resources. </p><p>Keep in mind that this section assumes that you have experience of working with some other programming language such as Python or JavaScript.</p><h3 id="hello-world">Hello World</h3><p>As I've already mentioned, C++ is a statically typed, compiled programming language and there are a number of compilers available out there. </p><p>The GCC or GNU Compiler Collection is one of the most popular compilers for C++ and my fellow freeCodeCamp author <a href="https://www.freecodecamp.org/news/author/fahimbinamin/">Md. Fahim Bin Amin</a> has written an excellent guide on <a href="https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/">How to Install C and C++ Compilers on Windows</a>. </p><p>Depending on your Linux distribution, one of the following commands should install GCC for you:</p><pre><code class="language-bash"># Debian/Ubuntu
+sudo apt install build-essential
+
+# Fedora
+sudo dnf install make automake gcc gcc-c++
+
+# Arch Linux
+sudo pacman -S base-devel</code></pre><p>On a mac, you can either install GCC using <a href="https://brew.sh/">Homebrew</a> or follow the guide written by another freeCodeCamp author <a href="https://www.freecodecamp.org/news/author/danielkehoe/">Daniel Kehoe</a> on <a href="https://www.freecodecamp.org/news/install-xcode-command-line-tools/">How to Install Xcode Command Line Tools on a Mac</a>.</p><p>Apart from GCC, there is also MSVC or Microsoft Visual C++ compiler on Windows. To install MSVC, head over to <a href="https://visualstudio.com/">https://visualstudio.com/</a>, download the latest installer, and install the "Desktop development with C++" workload:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="https://www.freecodecamp.org/news/content/images/2022/03/image-120.png" class="kg-image" alt="image-120" srcset="https://www.freecodecamp.org/news/content/images/size/w600/2022/03/image-120.png 600w, https://www.freecodecamp.org/news/content/images/size/w1000/2022/03/image-120.png 1000w, https://www.freecodecamp.org/news/content/images/2022/03/image-120.png 1280w" sizes="(min-width: 1200px) 1200px" width="1280" height="720" loading="lazy"></figure><p>Once you've done that, you should be able to write and compile C++ programs on your computer. To do so, create a file <code>hello-world.cpp</code> anywhere in your computer and put the following code in it:</p><pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main() {
+	std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+    
+    return 0;
+}</code></pre><p>Now if you're using GCC, open a terminal window in the same directory where the <code>hello-world.cpp</code> file exists and execute the following command:</p><pre><code>g++ -o hello-world hello-world.cpp</code></pre><p>This command will compile the <code>hello-world.cpp</code> into the file indicated in the <code>-o</code> option. You should see a new binary file named <code>hello-world</code> in the same folder. Execute the file from the terminal as follows:</p><pre><code class="language-bash">./hello-world
+
+# Hello World!</code></pre><p>If you're using MSVC, open up the start menu and search for "Developer PowerShell" and open the appropriate program according to your Visual Studio version:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="https://www.freecodecamp.org/news/content/images/2022/03/developer-powershell.png" class="kg-image" alt="developer-powershell" srcset="https://www.freecodecamp.org/news/content/images/size/w600/2022/03/developer-powershell.png 600w, https://www.freecodecamp.org/news/content/images/2022/03/developer-powershell.png 772w" width="600" height="400" loading="lazy"></figure><p>Now, cd into the directory where you've saved your <code>hello-world.cpp</code> file and execute the following command:</p><pre><code class="language-bash">cl -o hello-world hello-world.cpp</code></pre><p>Like the <code>g++</code> command, this will compile your <code>hello-world.cpp</code> file into a <code>hello-world.exe</code> binary executable. Execute the file using the following command:</p><pre><code class="language-bash">.\hello-world.exe
+
+# Hello World!</code></pre><h3 id="understanding-a-c-program">Understanding a C++ Program</h3><p>Now that you've written your first C++ program, it's time to understand what you just did. Let's take a look at the source code once again:</p><pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main() {
+	std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+    
+    return 0;
+}</code></pre><p>The source file has four lines of code in total. The first line is <code>#include &lt;iostream&gt;</code> and it does exactly what it sounds like. It includes the content of the <code>iostream</code> header file in the <code>hello-world.cpp</code> file. </p><p>Header files contain declarations of things like the <code>std::cout</code> and <code>std::endl</code> objects. The <code>iostream</code> header file deals with input and output streams.</p><p>After the <code>#include</code> statement, the <code>int main(){}</code> lines declares and defines a new function. This <code>main()</code> function will be called by the OS when you execute your program and every executable C++ program must have a <code>main()</code> function.</p><p>Everything you write within the curly braces will be part of this function. In the above mentioned code, the <code>std::cout</code> object prints any string that comes after the <code>&lt;&lt;</code> sign. The <code>std::endl</code> object appends a newline character at the end of the line. You can chain multiple things to output in a single <code>std::cout</code> call as follows:</p><pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main() {
+	std::cout &lt;&lt; "Hello World!" &lt;&lt; " " &lt;&lt; "C++ is awesome!" &lt;&lt; std::endl;
+    
+    return 0;
+}</code></pre><p>If you compile and run this program, you'll get the following output:</p><pre><code class="language-bash">Hello World! C++ is awesome!</code></pre><p>The word <code>int</code> in the function declaration simply means this function returns an integer. Returning <code>0</code> at the end of a program means it ran successfully. A non zero return value usually indicates some kind of failure, but that topic is out of the scope of this article.</p><h3 id="common-data-types-and-arrays">Common Data Types and Arrays</h3><p>C++ has seven fundamental data types. They are as follows:</p><!--kg-card-begin: markdown--><table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>Integer</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Floating Point</td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td>Double Floating Point</td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td>Character</td>
+</tr>
+<tr>
+<td><code>w_char</code></td>
+<td>Wide Character</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td><code>void</code></td>
+<td>Empty</td>
+</tr>
+</tbody>
+</table>
+<!--kg-card-end: markdown--><p>There are modifiers such as <code>short</code>, <code>long</code>, <code>signed</code>, and <code>unsigned</code> but I won't touch upon them in this high level overview. </p><p>To declare a variable of a certain data type, you can do something like this:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int main() {
+	int number = 25;
+
+	std::cout &lt;&lt; "The number is " &lt;&lt; number &lt;&lt; std::endl;
+    
+    return 0;
+}</code></pre><p>If you compile and run this program, the output will be:</p><pre><code>The number is 25</code></pre><p>There are also arrays which are capable of storing multiple values of the same type. So if you want to declare an array of type <code>int</code>, you can do so as follows:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int main() {
+	int numbers[] = { 1, 2, 3, 4, 5 };
+
+	std::cout &lt;&lt; "The number is " &lt;&lt; numbers[0] &lt;&lt; std::endl;
+
+	return 0;
+}</code></pre><p>You can access any element from the array following the <code>array_name[element_index]</code> syntax. Array indexes are zero-based so to access the number one element, you'll have to write <code>numbers[0]</code>, and the output of the above code will be:</p><pre><code>The number is 1</code></pre><p>You can also create strings using arrays of <code>char</code> type as follows:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int main() {
+	char name[] = "Farhan";
+
+	std::cout &lt;&lt; "My name is " &lt;&lt; name &lt;&lt; std::endl;
+
+	return 0;
+}</code></pre><p>The output of this program will be:</p><pre><code>My name is Farhan</code></pre><p>There is also <code>std::string</code> but I won't touch upon that. You can <a href="https://www.freecodecamp.org/news/c-string-std-string-example-in-cpp/">read more about it here</a>.</p><h3 id="flow-control">Flow Control</h3><p>In C++ there are the common ways of controlling the flow of your program such as if-else statements, switch statements, loops, breaks and so on. </p><p>In this section, I'll show you an example of if-else, a for loop, and a break statement. </p><p>Have a look at the following program:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int main() {
+	int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+	for (int i = 0; i &lt; 10; i++) {
+		if (numbers[i] == 5) {
+			std::cout &lt;&lt; numbers[i] &lt;&lt; std::endl;
+
+			break;
+		}
+	}
+
+	return 0;
+}</code></pre><p>It's a simple program that loops over an array of integers and checks whether the current element if 5 or not. If it is, the program will print out the number and break out of the loop. This can also be done using a range-based for loop as follows:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int main() {
+	int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+	for (auto number : numbers) {
+		if (number == 5) {
+			std::cout &lt;&lt; number &lt;&lt; std::endl;
+
+			break;
+		}
+	}
+
+	return 0;
+}</code></pre><p>The <code>auto</code> keyword will infer the type of the variable automatically. This syntax is again out of the scope of this article, but I just wanted to show you what you can do in C++.</p><h3 id="functions">Functions</h3><p>Like any other programming language, C++ also has functions. You can create one as follows:</p><pre><code class="language-cpp">#include&lt;iostream&gt;
+
+int add(int a, int b) {
+	return a + b;
+}
+
+int main() {
+	std::cout &lt;&lt; "The sum is " &lt;&lt; add(8, 2) &lt;&lt; std::endl;
+
+	return 0;
+}</code></pre><p>In this example, I've created a function named <code>add()</code> which returns an <code>int</code> and takes <code>int a</code> and <code>int b</code> as parameters. </p><p>When you call this function and pass two integers to it, the function will simply add the two numbers and return the sum. This is probably the simplest form of function in C++. In reality functions can get much more complex than this.</p><p>Now that you have a very brief idea of how the C++ programming language works, I'll introduce you to some very high quality learning resources on YouTube that you can use to learn C++.</p><h2 id="c-learning-resources">C++ Learning Resources</h2><p>In this section I'll give you a list of free and awesome videos on C++. Let's begin with the first one.</p><h3 id="learn-c-in-31-hours">Learn C++ in 31 Hours</h3><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/8jLOx1hD3_o?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>This is the latest C++ video on freeCodeCamp's YouTube channel. It's 31 hours long and touches upon every single important C++ concept. This is also the most up to date video on the list. </p><p>The instructor <strong>Daniel Gakwaya</strong> is an experienced software developer and knows what's he doing. If you're getting started with C++ in 2022, this is the video to follow.</p><p>But there are a few things to keep in mind when you're watching this. I've watched this video myself to brush up my rusty C++ skills and I can say from experience that you may feel overwhelmed by the time you've reached the middle of the video.</p><p>Don't worry, it's totally okay. What I suggest that you do is don't try to watch the entire video in one go. That way you won't remember anything.</p><p>Start from <strong>Chapter 1</strong> and watch the video until <strong>Chapter 7</strong>. Make sure to take breaks after each chapter and practice what you've learned. </p><p>Once you've reached Chapter 7, you should be able to solve any basic programming problem using C++. So find a programming problem solving platform that suits you and start solving problems using C++. </p><p>Once you feel confident about what you've already learned, come back to the video and resume watching.</p><p>Then I would suggest that you watch one chapter a day starting from Chapter 8. Because these are all intermediate to advanced topics and will take time to be properly understood. Don't rush, take it slow.</p><h3 id="learn-c-in-4-hours">Learn C++ in 4 Hours</h3><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/vLnPwxZdW4Y?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>If you think that 31 hours is a bit too overwhelming for you, then I would suggest this one. It's one of the older videos on the channel and teaches most of the fundamental concepts of C++ pretty nicely. </p><p>The instructor <strong>Mike</strong> from <strong>Giraffe Academy</strong> has created multiple courses on the freeCodeCamp channel and is well known for making enjoyable long tutorials.</p><p>The instructor will build some simple projects such as a calculator and mad libs game during the video. Make sure to understand what he's doing and try to implement those projects by yourself. This way you'll learn way better than just copying what he's doing on the video.</p><h3 id="object-oriented-programming-oop-in-c-">Object Oriented Programming (OOP) in C++</h3><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/wN0x9eZLix4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>This video is a bit different than the previous ones. Let's assume that you know C++ but you're not confident about your understanding of object oriented programming. In that case this video will help you immensely. It's a 1.5 hour long video completely dedicated to object oriented programming in C++. </p><p>The instructor <strong>Saldina Nurak</strong> aka <strong>CodeBeauty </strong>is a software developer and runs <a href="https://www.youtube.com/c/CodeBeauty/">an entire channel dedicated to C++</a>. Feel free to check out her content.</p><h3 id="opengl-crash-course">OpenGL Crash Course</h3><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/45MIykWJ-C4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>Assume that you have mastered C++ following one of the previous videos and now want to do something fun. Well, one of the most common things that you can do with C++ is working with graphics. </p><p>In this almost 2 hour long video course by <strong>Victor Gordan</strong> you'll not only learn about applying you C++ skills to render pretty graphics on screen, but also you'll get a good understanding of how computer graphics work in general.</p><p>The video requires understanding of OOP in C++ and some math skills. Even if you're not confident about your math, give the video a go. You may find it fun. </p><p>If you like this one and want to learn more, the same instructor has another video on the advanced parts of OpenGL</p><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/GJFHqK_-ARA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>In this one you'll learn a lot more advanced stuff about OpenGL and you'll need an understanding of the topics covered in the previous videos.</p><p>There is another instructor <strong>Etay Meiri</strong> who has created a really cool course on OpenGL on the freeCodeCamp YouTube channel.</p><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/GZQkwx10p-8?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>In this one, the instructor does an awesome job of teaching you how to implement skeletal animations using OpenGL. </p><p>But this video tackles some really advanced concepts so make sure that you have a good command of C++ and a mug of coffee nearby.</p><h3 id="unreal-engine-in-5-hours">Unreal Engine in 5 Hours</h3><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/LsNW4FPHuZE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>If you think rendering graphics manually on screen is not your thing and you want to use your new C++ skills in another way, then this video will surely interest you.</p><p>In this 5 hour long video course from Awesome Tuts, you'll create three complete games from scratch using Unreal Engine and C++. Although the video uses Unreal Engine 4 and not 5, you should be able to carry your knowledge from this video to UE5 pretty effortlessly.</p><p>If you like this one and want more videos on UE and C++, there are two more from the same instructor.</p><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/SOjZTmOMGcY?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>In this one you'll learn to make an endless runner game like Subway Surfer or temple run using Unearl Engine 4 and C++.</p><figure class="kg-card kg-embed-card"><iframe width="356" height="200" src="https://www.youtube.com/embed/4HoJIgyclZ4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" title="Embedded content" loading="lazy"></iframe></figure><p>If you're not into endless runners and want to create a first person shooter, the instructor also has a video on that.</p><h2 id="conclusion">Conclusion</h2><p>I would like to thank you from the bottom of my heart for the time you've spent reading this article. I hope you've learned some valuable stuff from this article and always remember:</p><blockquote> “The only way to learn a new programming language is by writing programs in it.” -- Dennis Ritchie</blockquote><p>So keep applying what you're learning about C++, make whimsical projects, share them on GitHub, and you'll become a C++ wizard in no time. </p><p>I also have a personal blog where I write about random tech stuff, so if you're interested in something like that, checkout <a href="https://farhan.dev">https://farhan.dev</a>. If you have any questions or are confused about anything – or just want to get in touch – I'm available on <a href="https://twitter.com/frhnhsin">Twitter</a> and <a href="https://www.linkedin.com/in/farhanhasin/">LinkedIn</a>.</p>
+
+                        </section>
+                        
+                            <div class="sidebar">
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                                    <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                
+                            </div>
+                        
+                    </div>
+                    <hr />
+                    
+                        <div class="post-full-author-header" data-test-label="author-header-with-bio">
+                            
+                                
+    
+    
+    
+
+    <section class="author-card" data-test-label="author-card">
+        
+            
+    <img
+      srcset="https://www.freecodecamp.org/news/content/images/size/w60/2022/08/20200204_151201-02.jpeg 60w"
+      sizes="60px"
+      src="https://www.freecodecamp.org/news/content/images/size/w60/2022/08/20200204_151201-02.jpeg"
+      class="author-profile-image"
+      alt="Farhan Hasin Chowdhury"
+      width="2000"
+      height="2000"
+      onerror="this.style.display='none'"
+      loading="lazy"
+      data-test-label="profile-image"
+    />
+  
+        
+
+        <section class="author-card-content ">
+            <span class="author-card-name">
+                <a href="/news/author/farhanhasin/" data-test-label="profile-link">
+                    
+                        Farhan Hasin Chowdhury
+                    
+                </a>
+            </span>
+            
+                
+                    <p data-test-label="author-bio">Software developer with a knack for learning new things and writing about them</p>
+                
+            
+        </section>
+    </section>
+
+                            
+                        </div>
+                        <hr />
+                    
+
+                    
+                    
+                        
+    
+
+
+<p data-test-label="social-row-cta" class="social-row">
+    If you read this far, tweet to the author to show them you care. <button id="tweet-btn" class="cta-button" data-test-label="tweet-button">Tweet a thanks</button>
+</p>
+
+
+    
+    <script>document.addEventListener("DOMContentLoaded",(()=>{const t=document.getElementById("tweet-btn"),e=window.location,n="How%20to%20Learn%20the%20C%2B%2B%20Programming%20Language".replace(/&#39;/g,"%27"),o="",r="@frhnhsin",i=Boolean("");let a;if(i&&(o||r)){const t={originalPostAuthor:"",currentPostAuthor:"Farhan Hasin Chowdhury"};a=encodeURIComponent(`Thank you ${o||t.originalPostAuthor} for writing this helpful article, and ${r||t.currentPostAuthor} for translating it.`)}else!i&&r&&(a=encodeURIComponent(`Thank you ${r} for writing this helpful article.`));const h=`window.open(\n    '${a?`https://twitter.com/intent/tweet?text=${a}%0A%0A${n}%0A%0A${e}`:`https://twitter.com/intent/tweet?text=${n}%0A%0A${e}`}',\n    'share-twitter',\n    'width=550, height=235'\n  ); return false;`;t.setAttribute("onclick",h)}));</script>
+
+
+                        
+
+<div class="learn-cta-row" data-test-label="learn-cta-row">
+    <p>
+        Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. <a href="https://www.freecodecamp.org/learn/" class="cta-button" id="learn-to-code-cta" rel="noopener noreferrer" target="_blank">Get started</a>
+    </p>
+</div>
+
+                    
+                </section>
+                
+                    <div class="banner-ad bottom">
+                        <div class="ad-wrapper" data-test-label="ad-wrapper">
+    
+    <div class="ad-text" data-test-label="ad-text">ADVERTISEMENT</div>
+    <ins
+        class="adsbygoogle"
+        style="display: block; height: 280px;"
+        data-ad-client="ca-pub-9482786369113753"
+        data-ad-slot="5720086888"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+    ></ins>
+    <script>
+        if (!isAuthenticated) (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                    </div>
+                
+            </article>
+        </div>
+    </main>
+
+
+            
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-desc-col">
+                <p data-test-label="tax-exempt-status">freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charity organization (United States Federal Tax Identification Number: 82-0779546)</p>
+                <p data-test-label="mission-statement">Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
+                <p data-test-label="donation-initiatives">Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.</p>
+                <p class="footer-donation" data-test-label="donate-text">
+                    You can <a href="https://www.freecodecamp.org/donate/" class="inline" rel="noopener noreferrer" target="_blank" >make a tax-deductible donation here</a>.
+                </p>
+            </div>
+            <div class="trending-guides" data-test-label="trending-guides">
+                <div class="col-header">Trending Guides</div>
+                <div class="trending-guides-row">
+                    <div class="footer-col footer-col-1">
+                        <a href="https://www.freecodecamp.org/news/python-ide-best-ides-and-editors-for-python/" rel="noopener noreferrer" target="_blank">Best Python IDEs
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/git-list-branches-how-to-show-all-remote-and-local-branch-names/" rel="noopener noreferrer" target="_blank">Git List Branches
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/java-enum-enumeration-in-java-example/" rel="noopener noreferrer" target="_blank">Java Enum Example
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/" rel="noopener noreferrer" target="_blank">Checkmark in HTML
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-an-iframe-html-example/" rel="noopener noreferrer" target="_blank">What is an iframe?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/python-list-length-how-to-get-the-size-of-a-list-in-python/" rel="noopener noreferrer" target="_blank">Python List Length
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/python-string-to-int-convert-a-string-example/" rel="noopener noreferrer" target="_blank">Python String to Int
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/int-to-string-in-cpp-how-to-convert-an-integer-with-tostring/" rel="noopener noreferrer" target="_blank">Int to String in C++
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/css-margin-vs-padding-what-is-the-difference/" rel="noopener noreferrer" target="_blank">CSS Margin vs Padding
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/" rel="noopener noreferrer" target="_blank">HTML Starter Template
+                        </a>
+                    </div>
+                    <div class="footer-col footer-col-2">
+                        <a href="https://www.freecodecamp.org/news/python-index-find-index-of-element-in-list/" rel="noopener noreferrer" target="_blank">Python Index
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-html-what-does-html-stand-for-solved/" rel="noopener noreferrer" target="_blank">What is HTML?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-utf-8-character-encoding/" rel="noopener noreferrer" target="_blank">What is UTF-8?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/sql-inner-join-how-to-join-3-tables-in-sql-and-mysql/" rel="noopener noreferrer" target="_blank">SQL Inner Join
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/what-is-aname-aname-record-dns-tutorial/" rel="noopener noreferrer" target="_blank">What is ANAME?
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/dot-symbol-bullet-point-in-html-unicode/" rel="noopener noreferrer" target="_blank">HTML Dot Symbol
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/indexof-in-java-how-to-find-the-index-of-a-string-in-java/" rel="noopener noreferrer" target="_blank">indexOf in Java
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/image-file-types-picture-format-extensions-jpeg-gif-png-svg-tiff/" rel="noopener noreferrer" target="_blank">Image File Types
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/solid-principles-single-responsibility-principle-explained/" rel="noopener noreferrer" target="_blank">SOLID Principles
+                        </a>
+                        <a href="https://www.freecodecamp.org/news/flushdns-how-to-flush-dns-with-the-windows-ipconfig-flushdns-command/" rel="noopener noreferrer" target="_blank">How to Flush DNS
+                        </a>
+                    </div>
+                    <div class="footer-col footer-col-3">
+                        <div class="footer-left">
+                            <a href="https://www.freecodecamp.org/news/rubber-duck-debugging/" rel="noopener noreferrer" target="_blank">Rubber Duck Debugging
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/relational-vs-nonrelational-databases-difference-between-sql-db-and-nosql-db/" rel="noopener noreferrer" target="_blank">SQL vs NoSQL Databases
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/python-for-loop-example-how-to-write-loops-in-python/" rel="noopener noreferrer" target="_blank">Python For Loop Example
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/int-object-is-not-iterable-python-error-solved/" rel="noopener noreferrer" target="_blank">Int Object Not Iterable
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/how-to-type-the-vertical-line-bar-character-on-a-keyboard/" rel="noopener noreferrer" target="_blank">How to Type Vertical Bar
+                            </a>
+                        </div>
+
+                        <div class="footer-right">
+                            <a href="https://www.freecodecamp.org/news/dns-server-not-responding-service-unavailable-dns-failure-solved/" rel="noopener noreferrer" target="_blank">DNS Server Not Responding
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/module-exports-how-to-export-in-node-js-and-javascript/" rel="noopener noreferrer" target="_blank">Module Exports in Node.js
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/computer-skills-for-resume-software-skill-proficiency-guide/" rel="noopener noreferrer" target="_blank">Computer Skills for Résumé
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/how-to-force-delete-a-file-windows-command-prompt-cmd-delete/" rel="noopener noreferrer" target="_blank">Force Delete a Windows File
+                            </a>
+                            <a href="https://www.freecodecamp.org/news/how-to-inspect-an-element-chrome-shortcut/" rel="noopener noreferrer" target="_blank">Inspect an Element in Chrome
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footer-bottom'>
+            <div class="col-header" data-test-label="our-nonprofit">Our Charity</div>
+            <div class="footer-divider"></div>
+            <div class="our-nonprofit">
+                <a href="https://www.freecodecamp.org/news/about/" rel="noopener noreferrer" target="_blank" data-test-label="about">
+                    About
+                </a>
+                <a href="https://www.linkedin.com/school/free-code-camp/people/" rel="noopener noreferrer" target="_blank" data-test-label="alumni">
+                    Alumni Network
+                </a>
+                <a href="https://github.com/freeCodeCamp/" rel="noopener noreferrer" target="_blank" data-test-label="open-source">
+                    Open Source
+                </a>
+                <a href="https://www.freecodecamp.org/news/shop/" rel="noopener noreferrer" target="_blank" data-test-label="shop">
+                    Shop
+                </a>
+                <a href="https://www.freecodecamp.org/news/support/" rel="noopener noreferrer" target="_blank" data-test-label="support">
+                    Support
+                </a>
+                <a href="https://www.freecodecamp.org/news/sponsors/" rel="noopener noreferrer" target="_blank" data-test-label="sponsors">
+                    Sponsors
+                </a>
+                <a href="https://www.freecodecamp.org/news/academic-honesty-policy/" rel="noopener noreferrer" target="_blank" data-test-label="honesty">
+                    Academic Honesty
+                </a>
+                <a href="https://www.freecodecamp.org/news/code-of-conduct/" rel="noopener noreferrer" target="_blank" data-test-label="coc">
+                    Code of Conduct
+                </a>
+                <a href="https://www.freecodecamp.org/news/privacy-policy/" rel="noopener noreferrer" target="_blank" data-test-label="privacy">
+                    Privacy Policy
+                </a>
+                <a href="https://www.freecodecamp.org/news/terms-of-service/" rel="noopener noreferrer" target="_blank" data-test-label="tos">
+                    Terms of Service
+                </a>
+                <a href="https://www.freecodecamp.org/news/copyright-policy/" rel="noopener noreferrer" target="_blank" data-test-label="copyright">
+                    Copyright Policy
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+
+        
+        
+        
+
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6RKKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77e4cf35dd270d73","token":"bdb993c6dde44e178aabd9555e75e4f4","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

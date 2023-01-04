@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -10,8 +10,8 @@ static const char dmenufont[]       = "18 Khebrat Musamim:size=13";
 static const char col_gray1[]       = "#222222"; /* bar color */
 static const char col_gray2[]       = "#03071e"; /* inactive window border */
 static const char col_gray3[]       = "#ffffff"; /* bar font color */
-static const char col_gray4[]       = "#00ffbb"; /* current Tag Color */
-static const char col_cyan[]        = "#4e0000"; /* middle bar color and border active window */
+static const char col_gray4[]       = "#000000"; /* current Tag Color */
+static const char col_cyan[]        = "#fec89a"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -28,7 +28,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           -1 },
 };
 /*
  * Power Things 
