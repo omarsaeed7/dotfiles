@@ -10,8 +10,8 @@ static const char dmenufont[]       = "18 Khebrat Musamim:size=13";
 static const char col_gray1[]       = "#222222"; /* bar color */
 static const char col_gray2[]       = "#03071e"; /* inactive window border */
 static const char col_gray3[]       = "#ffffff"; /* bar font color */
-static const char col_gray4[]       = "#000000"; /* current Tag Color */
-static const char col_cyan[]        = "#fec89a"; /* middle bar color and border active window */
+static const char col_gray4[]       = "#ffffff"; /* current Tag Color */
+static const char col_cyan[]        = "#582f0e"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },

@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 
@@ -102,27 +102,27 @@ float alpha = 0.8;
 static const char *colorname[] = {
 
 	  /* 8 normal colors */
-	  [0] = "#1b1918", /* black   */
-	  [1] = "#f22c40", /* red     */
-	  [2] = "#00ff99", /* green   */
-	  [3] = "#ff7100", /* yellow  */
-	  [4] = "#702cff", /* blue    */
-	  [5] = "#ffa293", /* magenta */
-	  [6] = "#00ffe6", /* cyan    */
-	  [7] = "#ffb377", /* white   */
+	  [0] = "#3b3c35", /* black   */
+	  [1] = "#f7eb04", /* red     */
+	  [2] = "#00ff2d", /* green   */
+	  [3] = "#e4db73", /* yellow  */
+	  [4] = "#ff6274", /* blue    */
+	  [5] = "#ffffff", /* magenta */
+	  [6] = "#66d9ee", /* cyan    */
+	  [7] = "#fdfff1", /* white   */
 
 	  /* 8 bright colors */
-	  [8]  = "#766e6b", /* black   */
-	  [9]  = "#f22c40", /* red     */
-	  [10] = "#00ff69", /* green   */
-	  [11] = "#18ffef", /* yellow  */
-	  [12] = "#fff46a", /* blue    */
-	  [13] = "#ffa293", /* magenta */
-	  [14] = "#00ffe6", /* cyan    */
-	  [15] = "#ffffff", /* white   */
+	  [8]  = "#6e7066", /* black   */
+	  [9]  = "#f7eb04", /* red     */
+	  [10] = "#00ff2d", /* green   */
+	  [11] = "#e4db73", /* yellow  */
+	  [12] = "#ff6274", /* blue    */
+	  [13] = "#ffffff", /* magenta */
+	  [14] = "#66d9ee", /* cyan    */
+	  [15] = "#fdfff1", /* white   */
 
 	  /* special colors */
-	  [256] = "#1b1918", /* background */
+	  [256] = "#0b0000", /* background */
 	  [257] = "#ffffff", /* foreground */
 };
 
