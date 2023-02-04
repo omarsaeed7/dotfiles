@@ -1,17 +1,17 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {"18 Khebrat Musamim:size=13","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
 static const char dmenufont[]       = "18 Khebrat Musamim:size=13";
-static const char col_gray1[]       = "#222222"; /* bar color */
-static const char col_gray2[]       = "#03071e"; /* inactive window border */
-static const char col_gray3[]       = "#ffffff"; /* bar font color */
+static const char col_gray1[]       = "#000000"; /* bar color */
+static const char col_gray2[]       = "#000000"; /* inactive window border */
+static const char col_gray3[]       = "#e63946"; /* bar font color and tag color inactive */
 static const char col_gray4[]       = "#ffffff"; /* current Tag Color */
-static const char col_cyan[]        = "#582f0e"; /* middle bar color and border active window */
+static const char col_cyan[]        = "#000000"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"","","",""};
+static const char *tags[] = {"","","","",""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -96,6 +96,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
@@ -115,4 +116,5 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+
 
