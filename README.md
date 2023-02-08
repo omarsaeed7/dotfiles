@@ -1,4 +1,4 @@
-# This is DWM window manager dot files 
+# This is DWM window manager dotfiles 
 ![rice](rice.png "rice Image")
 ## Software
 - sxiv -> image viewer
