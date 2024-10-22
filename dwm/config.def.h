@@ -5,11 +5,11 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"18 Khebrat Musamim:size=13","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
-static const char dmenufont[]       = "18 Khebrat Musamim:size=13";
+static const char *fonts[]          = {"vazirmatn:size=13","vazirmatn:size=13","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
+static const char dmenufont[]       = "vazirmatn:size=13";
 static const char col_gray1[]       = "#000000"; /* bar color */
 static const char col_gray2[]       = "#000000"; /* inactive window border */
-static const char col_gray3[]       = "#e63946"; /* bar font color and tag color inactive */
+static const char col_gray3[]       = "#80ffdb"; /* bar font color and tag color inactive */
 static const char col_gray4[]       = "#ffffff"; /* current Tag Color */
 static const char col_cyan[]        = "#000000"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
@@ -28,7 +28,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "TelegramDesktop",  NULL,       NULL,       1 << 3,       0,           -1 },
 };
 /*
  * Power Things 

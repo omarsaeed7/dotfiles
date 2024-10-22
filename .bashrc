@@ -154,4 +154,5 @@ alias icat='kitty +kitten icat --align=left'
 alias n='bpytop'
 alias calc='qalc'
 alias mm='mpv --no-audio-display --loop-playlist=inf Music/spotify/one-more-time.m4a Music/spotify/anotherLove.mp3'
+alias 1='~/.scripts/ufetch'
 export PATH=$PATH:/home/kf/.spicetify

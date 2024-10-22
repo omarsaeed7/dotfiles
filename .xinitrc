@@ -5,10 +5,9 @@
 # global xinitrc file, used by all X sessions started by xinit (startx)
 
 # invoke global X session script
-
-xrandr --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal &
+xrandr --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --primary 
 while true; do
-   xsetroot -name "$( date +"%F %R" ) افرد ظهرك عشان قلبك"
+   xsetroot -name "$( date +"%F   %R" )"
    sleep 1m    # Update time every minute
 done &
 setxkbmap -option grp:alt_shift_toggle us,ar &
