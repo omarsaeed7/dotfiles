@@ -1,43 +1,5 @@
-diff --git a/config.def.h b/config.def.h
-index 91ab8ca..6af616e 100644
---- a/config.def.h
-+++ b/config.def.h
-@@ -93,6 +93,9 @@ char *termname = "st-256color";
-  */
- unsigned int tabspaces = 8;
- 
-+/* bg opacity */
-+float alpha = 0.8;
-+
- /* Terminal colors (16 first used in escape sequence) */
- static const char *colorname[] = {
- 	/* 8 normal colors */
-diff --git a/config.mk b/config.mk
-index 4c4c5d5..0114bad 100644
---- a/config.mk
-+++ b/config.mk
-@@ -16,7 +16,7 @@ PKG_CONFIG = pkg-config
- INCS = -I$(X11INC) \
-        `$(PKG_CONFIG) --cflags fontconfig` \
-        `$(PKG_CONFIG) --cflags freetype2`
--LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \
-+LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lXrender\
-        `$(PKG_CONFIG) --libs fontconfig` \
-        `$(PKG_CONFIG) --libs freetype2`
- 
-diff --git a/st.h b/st.h
-index 519b9bd..8bb533d 100644
---- a/st.h
-+++ b/st.h
-@@ -126,3 +126,4 @@ extern unsigned int tabspaces;
- extern unsigned int defaultfg;
- extern unsigned int defaultbg;
- extern unsigned int defaultcs;
-+extern float alpha;
-diff --git a/x.c b/x.c
-index 8a16faa..ddf4178 100644
---- a/x.c
-+++ b/x.c
+--- x.c
++++ x.c
 @@ -105,6 +105,7 @@ typedef struct {
  	XSetWindowAttributes attrs;
  	int scr;

@@ -1,9 +1,11 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-figlet -t Fight For Your Life
+# ~/.scripts/ufetch
+figlet -tc Fight For Your Life
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export PATH=~/.config/composer/vendor/bin:$PATH
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -124,7 +126,7 @@ alias mk=" sudo make clean install"
 alias dow="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias img="cd ~/Pictures"
-alias videos="cd ~/Videos"
+alias vid="cd ~/Videos"
 alias wm="cd ~/wm"
 alias c="tty-clock"
 alias p="~/.local/bin/np_main --all"
@@ -153,6 +155,20 @@ alias lld='ls -d */'
 alias icat='kitty +kitten icat --align=left'
 alias n='bpytop'
 alias calc='qalc'
-alias mm='mpv --no-audio-display --loop-playlist=inf Music/spotify/one-more-time.m4a Music/spotify/anotherLove.mp3'
+alias mm='mpv --no-audio-display --loop-playlist=inf Music/'
+alias token='cat ~/Documents/notes/tokens'
 alias 1='~/.scripts/ufetch'
-export PATH=$PATH:/home/kf/.spicetify
+alias e='vim ~/Documents/notes/commands.md'
+alias start='/home/kf/./.start'
+alias stop='~/./.stop'
+alias status='~/./.status'
+alias lara="cd ~/Learning/web/backend/laravel"
+alias emails='cat ~/Documents/notes/emails.md'
+alias notes='cd ~/Documents/notes'
+alias op='php artisan route:clear
+php artisan config:clear
+php artisan cache:clear
+php artisan optimize'
+alias ser='php artisan serve'
+alias c="'<,'>w !xclip -selection clipboard"
+# export PATH=$PATH:/home/kf/.spicetify

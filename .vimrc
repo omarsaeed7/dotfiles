@@ -1,6 +1,6 @@
 runtime! debian.vim
 set title
-colorscheme delek
+colorscheme default
 " This happens after /etc/vim/vimrc(.local) are loaded, so it will override
 " any settings in these files.
 " If you don't want that to happen, uncomment the below line to prevent

@@ -5,13 +5,13 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"vazirmatn:size=13","vazirmatn:size=13","monospace:size=12","Font Awesome 6 Free:size=12","FuraMono Nerd Font:size=12"};
-static const char dmenufont[]       = "vazirmatn:size=13";
+static const char *fonts[]          = {"vazirmatn:size=11","vazirmatn:size=11","monospace:size=11","Font Awesome 6 Free:size=11","FuraMono Nerd Font:size=11"};
+static const char dmenufont[]       = "vazirmatn:size=11";
 static const char col_gray1[]       = "#000000"; /* bar color */
 static const char col_gray2[]       = "#000000"; /* inactive window border */
-static const char col_gray3[]       = "#affc41"; /* bar font color and tag color inactive */
+static const char col_gray3[]       = "#FFFFFF"; /* bar font color and tag color inactive */
 static const char col_gray4[]       = "#ffffff"; /* current Tag Color */
-static const char col_cyan[]        = "#000000"; /* middle bar color and border active window */
+static const char col_cyan[]        = "#8d006b"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -65,7 +65,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "kitty", NULL }; /*  kitty, NULL */
+static const char *termcmd[]  = { "st", NULL }; /*  kitty, NULL */
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -92,7 +92,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } }, /* change between screens*/
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } }, /* change between screens */
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } }, /* move the application from it's screen to other screen */
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } }, /* same as above*/
+	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } }, /* same as above*/	
+	{ MODKEY,                       XK_grave,      focusstack,     {.i = +1 } },/* move between applications*/
 	TAGKEYS(                        XK_1,                      0)/* move to tab number */
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -108,7 +109,7 @@ static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
+	{ ClkWinTitle,          0,              Button1,        movemouse,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
@@ -117,6 +118,9 @@ static const Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+	{ ClkStatusText,        0,              Button1,        focusstack,          {.i = +1} },
+	{ ClkStatusText,        0,              Button3,        focusstack,          {.i = -1} },
 };
+
 
 
