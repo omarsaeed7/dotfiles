@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Check if we're in the Laravel project directory
+if [ ! -f .env.example ]; then	
+    cp ~/Documents/isinbiotech/.env.example .env
+fi
+
+# Get the folder name (using the current directory name)
+folder_name=$(basename "$PWD")
+root='root'
+MYSQL_USER="root"
+MYSQL_PASS='password'
+
+
+# Check if the .env file exists
+if [ ! -f .env ]; then
+	echo ".env file not found. Creating from .env.example..."
+    	# Copy the .env.example file to .env
+    	cp ~/Documents/isinbiotech/.env.example .env
+    	cp .env .env.backup
+fi
+
+# Update the DB_DATABASE in the .env file with the folder name
+echo "Updating database name in .env file..."
+sed -i "s/^DB_DATABASE=.*/DB_DATABASE=$folder_name/" .env
+sed -i "s/^DB_USERNAME=.*/DB_USERNAME=$root/" .env
+sed -i "s/^DB_PASSWORD=.*/DB_PASSWORD=$MYSQL_PASS/" .env
+# Create the database in MySQL if it doesn't exist
+echo "Checking if database $folder_name exists..."
+
+#db_exists=$(mysql -u "$MYSQL_USER" -e "SHOW DATABASES LIKE '$folder_name';")
+
+
+#if the database have password 
+db_exists=$(mysql -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" -e "SHOW DATABASES LIKE '$folder_name';")
+
+if [ -z "$db_exists" ]; then
+   echo "Creating database $folder_name..."
+   mysql -u "$MYSQL_USER" -p "$MYSQL_PASSWORD" -e "CREATE DATABASE $folder_name;"
+else
+    echo "Database $folder_name already exists."
+fi
+
+#if [ -z "$db_exists" ]; then
+#    echo "Creating database $folder_name..."
+#    mysql -u "$MYSQL_USER" -e "CREATE DATABASE \`$folder_name\`;"
+#else
+#    echo "Database $folder_name already exists."
+#fi
+
+
+# Run Laravel commands
+echo "Running composer update..."
+composer update
+
+echo "Generating application key..."
+php artisan key:generate
+
+echo "Running migrations and seeding..."
+php artisan migrate:fresh --seed
+
+echo "Creating storage symlink..."
+php artisan storage:link
+
+echo "All tasks completed successfully!"
+
