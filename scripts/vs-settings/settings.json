@@ -1,10 +1,10 @@
 {
   "editor.fontSize": 18,
   "editor.fontFamily": "'cascadia code', 'Vazirmatn', monospace",
-  "editor.fontWeight": "500",
+  "editor.fontWeight": "600",
   "editor.fontLigatures": true,
   "files.autoSave": "afterDelay",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.startupEditor": "none",
   "editor.wordWrap": "on",
   "window.commandCenter": false,
@@ -44,13 +44,13 @@
   },
   "window.density.editorTabHeight": "compact",
   "editor.minimap.enabled": false,
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {
     "terminal.foreground": "#ffffff",
-    "terminal.background": "#000000",
+    "terminal.background": "#212121",
     "terminal.ansiBlack": "#1D2021",
     "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#7405f2",
+    "terminal.ansiBrightBlue": "#ff0368",
     "terminal.ansiBrightCyan": "#8BA59B",
     "terminal.ansiBrightGreen": "#ffdb0c",
     "terminal.ansiBrightMagenta": "#8F4673",
@@ -65,7 +65,6 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "workbench.colorTheme": "Monokai",
   "Devdb.colorTheme": "dark",
   "Devdb.dontShowNewVersionMessage": true,
   "workbench.editor.empty.hint": "hidden",
@@ -74,5 +73,14 @@
   "editor.inlayHints.fontFamily": "'fira code",
   "editor.inlayHints.fontSize": 18,
   "editor.inlayHints.padding": true,
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "database-client.autoSync": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "window.titleBarStyle": "native",
+  "workbench.colorTheme": "Monokai Pro"
 }
