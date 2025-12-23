@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=16";
+static char *font = "Cascadia Code:weight=bold:pixelsize=18:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 	"DejaVu Sans:pixelsize=16",

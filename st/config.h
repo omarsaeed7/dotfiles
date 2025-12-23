@@ -1,13 +1,14 @@
 /* See LICENSE file for copyright and license details. */
-
+#define HARFBUZZ 1
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Jetbrains mono:pixelsize=20:weight=bold";
+static char *font = "CaskaydiaCove Nerd Font:pixelsize=18:weight=bold";
 /* Spare fonts */
 static char *font2[] = {
+	"mono:pixelsize=16",
 	"DejaVu Sans:pixelsize=16",
 	"DejaVuSansM Nerd Font:pixelsize=16",
 	"Noto Color Emoji:pixelsize=14"
