@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
-
+void viewprev(const Arg *arg);
+void viewnext(const Arg *arg);
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -11,7 +12,7 @@ static const char col_gray1[]       = "#000000"; /* bar color */
 static const char col_gray2[]       = "#000000"; /* inactive window border */
 static const char col_gray3[]       = "#FFFFFF"; /* bar font color and tag color inactive */
 static const char col_gray4[]       = "#ffffff"; /* current Tag Color */
-static const char col_cyan[]        = "#8d006b"; /* middle bar color and border active window */
+static const char col_cyan[]        = "#BE3D2A"; /* middle bar color and border active window */
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -19,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"","","","","",""};
+static const char *tags[] = {"","","","","",""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -27,7 +28,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     NULL,       NULL,       1<<6,            1,           -1 },
 	{ "TelegramDesktop",  NULL,       NULL,       1 << 3,       0,           -1 },	
 	/*{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },*/
 };
@@ -101,6 +102,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_5,                      4)
 	TAGKEYS(			XK_6,			   5)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} }, /* terminat the DWM */ /* used to restart the window manager*/
+	{ MODKEY,                       XK_Left,  viewprev,       {0} },
+	{ MODKEY,                       XK_Right, viewnext,       {0} },
 };
 
 /* button definitions */
@@ -111,6 +114,7 @@ static const Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button1,        movemouse,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	{ ClkStatusText, 	0, 		Button3, 	killclient, 	{0} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },

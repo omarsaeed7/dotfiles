@@ -2152,6 +2152,36 @@ zoom(const Arg *arg)
 		return;
 	pop(c);
 }
+void
+viewprev(const Arg *arg) {
+	    int i;
+	        unsigned int curtag = selmon->tagset[selmon->seltags];
+		    for (i = 0; i < LENGTH(tags); i++) {
+			            if ((1 << i) == curtag) {
+					                if (i == 0)
+								                view(&((Arg){.ui = 1 << (LENGTH(tags) - 1)}));
+							            else
+									                    view(&((Arg){.ui = 1 << (i - 1)}));
+								                break;
+										        }
+				        }
+}
+
+void
+viewnext(const Arg *arg) {
+	    int i;
+	        unsigned int curtag = selmon->tagset[selmon->seltags];
+		    for (i = 0; i < LENGTH(tags); i++) {
+			            if ((1 << i) == curtag) {
+					                if (i == LENGTH(tags) - 1)
+								                view(&((Arg){.ui = 1 << 0}));
+							            else
+									                    view(&((Arg){.ui = 1 << (i + 1)}));
+								                break;
+										        }
+				        }
+}
+
 
 int
 main(int argc, char *argv[])
