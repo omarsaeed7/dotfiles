@@ -1,0 +1,86 @@
+{
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'cascadia code', 'Vazirmatn', monospace",
+  "editor.fontWeight": "600",
+  "editor.fontLigatures": true,
+  "files.autoSave": "afterDelay",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.startupEditor": "none",
+  "editor.wordWrap": "on",
+  "window.commandCenter": false,
+  "markdown.styles": ["markdown.css"],
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "500",
+  "json.schemas": [],
+  "editor.tabSize": 1,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 0.6,
+  "window.menuBarVisibility": "toggle",
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "foreground": "#06ac00",
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "window.density.editorTabHeight": "compact",
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#ffffff",
+    "terminal.background": "#212121",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#ff0368",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#ffdb0c",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#ffffff",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiBlue": "#00f921",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8e4170",
+    "terminal.ansiRed": "#ff2600",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
+  },
+  "Devdb.colorTheme": "dark",
+  "Devdb.dontShowNewVersionMessage": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.settings.applyToAllProfiles": [],
+  "terminal.integrated.tabs.location": "left",
+  "editor.inlayHints.fontFamily": "'fira code",
+  "editor.inlayHints.fontSize": 18,
+  "editor.inlayHints.padding": true,
+  "workbench.statusBar.visible": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "database-client.autoSync": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "window.titleBarStyle": "native",
+  "workbench.colorTheme": "Monokai Pro"
+}
